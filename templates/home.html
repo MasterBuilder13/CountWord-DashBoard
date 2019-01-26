@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Counting Words</title>
+</head> 
+
+<body>
+    <div class="page-header">
+            <h1><a href="/">COUNTING WORDS</a></h1>
+    </div>
+
+
+    <form action="{% url 'count' %}">
+        <textarea cols="40" rows="10" name="fulltext"></textarea>
+        <br />
+        <input type="submit" value="Count!" />
+        <input type="submit" value="Oprímeme" formaction="{% url 'about' %}" >
+    </form>
+    
+</body> <!-- END BODY -->
+
+</html>
